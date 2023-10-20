@@ -5,6 +5,7 @@
 body
 {
     font-family: "Roboto";
+    font-size: 13px;
 }
 a
 {
@@ -19,6 +20,13 @@ p
 header
 {
         padding: 15px 0;
+        position: fixed;
+        top:0;
+        width: 100%;
+        left:0%;
+        z-index: 2;
+        background-color: white;
+        width: 100%;
 }
 
 header .container
@@ -39,6 +47,22 @@ header .container a
     text-decoration: none;
     margin: 0 15px;
 }
+
+.boton
+{
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.boton.boton-rojo
+{
+    color:white;
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .container
 {
     width: 1140px;
@@ -46,6 +70,7 @@ header .container a
     padding-right: 15px;
     padding-left: 15px;
 }
+
 #inicio
 {
     position: relative;
@@ -66,7 +91,15 @@ header .container a
     text-align: center;
     margin-left: -200px;
 }
+
 #inicio .bloque-inicio h1
 {
-    color: white
+    color: white;
+    font-size: 35px;
+}
+
+#inicio .bloque-inicio p
+{
+    color: white;
+    font-size: 16px;
 }
