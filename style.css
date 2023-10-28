@@ -49,6 +49,11 @@ header .container nav a
     margin: 0 15px;
 }
 
+/* header .container .hamb
+    {
+        display: none;
+    } */
+
 footer
 {
     background-color: black;
@@ -80,6 +85,7 @@ footer ul
 {
    padding-left: 0;
    list-style: none;
+   margin: 0;
 }
 
 footer p
@@ -401,3 +407,112 @@ footer .redes a
     margin-bottom: 0;
 }
 
+
+
+@media(max-width:767px)
+{
+    body 
+    {
+        font-size: 15px;
+    }
+    header .container nav
+    {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        transition:all 0.4s ease;
+        transform: translateX(100%);
+    };
+
+    header .container nav a
+    {
+        font-size: 30px;
+        margin: 15px 0;
+    };
+
+    header .container .hamb
+    {
+        display: block;
+        font-size: 40px;
+        color:red;
+    }
+
+    form .boton.boton-negro
+    {
+        width: 100%;
+    }
+
+    footer
+    {
+        text-align: center;
+    }
+
+    footer .logo-footer
+    {
+        width: 50%;
+    }
+
+    footer .redes {
+        justify-content: center;
+    }
+
+    .container
+    {
+        width: 100%
+    }
+    .columna-mobile-100
+    {
+        width: 100%;
+    }
+
+    .columna-mobile-50
+    {
+        width: 50%;
+    }
+    
+
+    #inicio
+    {
+        height: 100vh;
+    }
+
+    .empujar-mobile-0
+    {
+        margin-left: 0;
+    }
+
+    .sinpadding-mobile
+    {
+        padding: 0;
+    }
+
+    #inicio img
+    {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #servicios .bloque-servicio {
+       margin-bottom: 15px;
+    }
+
+    #contactenos  {
+        padding: 0;
+    }
+
+    #contactenos iframe {
+        position: relative;
+        height: 50vh;
+    }
+
+}
